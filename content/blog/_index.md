@@ -13,4 +13,4 @@ Hi，你現在看到的「**Blog**」頁面，是這個網站最核心的內容�
 - [給少年的話](/categories/gei-shao-nian-de-hua)：
 - [個案分享](/categories/ge-an-fen-xiang)：
 - [工作反思](/categories/gong-zuo-fan-si)：
-- [看圖說故事](/categories/kan-tu-shuo-gu-shi)：
+
