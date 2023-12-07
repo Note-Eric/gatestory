@@ -1,10 +1,10 @@
 ---
 title: 南觀×難關×喃倌的 Changelog
-description: 這邊放置 Pin 起來網站的 Changelog，主要的內容是描述「這個網站」本身的變化，包含新增、調整、或刪除的內容。
+description: 南觀×難關×喃倌的 Changelog，主要的內容是描述「這個網站」本身的變化，包含新增、調整、或刪除的內容。
 path: changelog/
 draft: false
-date: 2022-04-20
-updated: 2023-05-14
+date: 2023-12-07
+updated: 2023-12-07
 template: changelog.html
 ---
 

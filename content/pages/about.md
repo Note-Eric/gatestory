@@ -1,9 +1,9 @@
 ---
 title: 關於這個網站-南觀×難關×喃倌
 path: about/
-date: 2022-04-17
-updated: 2023-08-19
-description: 這個網站 Pin 起來 ／ Pinchlime.com 是由我自己一個人獨立經營的部落格，主要是拿來放我寫的各種關於生產力工具、生產力方法論、工作流（workflow）、以及其他各種雜談的文章。
+date: 2023-12-07
+updated: 2023-12-07
+description: 南觀×難關×喃倌南觀×難關×喃倌
 ---
 
 ## 關於南觀×難關×喃倌
