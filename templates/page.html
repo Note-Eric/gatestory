@@ -121,13 +121,13 @@
   <h2>{{trans(key="label_related_posts",lang=lang) | markdown(inline=true) | safe}}</h2>
   <ul>
     <li class="no-underline">
-    <a class="category" href="{{ get_taxonomy_url(kind="categories", name=page.taxonomies.categories[0]) }}">➤&emsp;其他 {{
-      page.taxonomies.categories[0] }}分類</a><br>      
+    <a class="category" href="{{ get_taxonomy_url(kind="categories", name=page.taxonomies.categories[0]) }}">➤&emsp;其他「{{
+      page.taxonomies.categories[0] }}」分類</a><br>      
     </li>
     {% if page.taxonomies.tags -%}
     {% for tag in page.taxonomies.tags %}
     <li class="no-underline">
-    <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}">➤&emsp;其他{{ tag }}標籤</a>{% if page.taxonomies.tags | length > 1 %}{% if
+    <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}">➤&emsp;其他「{{ tag }}」標籤</a>{% if page.taxonomies.tags | length > 1 %}{% if
     loop.index != page.taxonomies.tags | length %}<br>{% endif %}{% endif %}
     </li>
     {% endfor %}
