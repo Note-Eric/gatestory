@@ -50,7 +50,7 @@
 
 {% endmacro snapshots_min %}
 
-{% macro newsletters_min(page) %}
+{% macro pic_story_min(page) %}
 <div style="display: flex; justify-content: space-between;">
   <div style="display: flex;">
     <div class="li_archive_news">
@@ -60,7 +60,7 @@
   <span class="muted text-sm" style="font-family: menlo; white-space: nowrap;">{{ page.date | date(format="%b %d") }}</span>
 </div>
 
-{% endmacro newsletters_min %}
+{% endmacro pic_story_min %}
 
 {% macro library_min(page) %}
 <div style="display: flex;justify-content: space-between; line-height: 1;">
@@ -77,9 +77,9 @@
 <a href="{{ page.permalink }}">{{ page.title }}</a><br>
 {% endmacro snapshots_side %}
 
-{% macro newsletters_side(page) %}
+{% macro pic_story_side(page) %}
 <span>＃{{page.extra.issues }} </span><a href="{{ page.permalink }}">{{ page.title }}</a><br>
-{% endmacro newsletters_side %}
+{% endmacro pic_story_side %}
 
 {% macro library_side(page) %}
 <li>

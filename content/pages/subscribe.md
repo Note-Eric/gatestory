@@ -15,6 +15,6 @@ template: subscribe.html
 例如，你可以透過下列連結，只訂閱特定主類別的內容：
 
 - [Blog](/blog/atom.xml)
-- [Newsletters](/newsletters/atom.xml)
+- [Pic Story](/pic_story/atom.xml)
 
 ---

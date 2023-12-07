@@ -15,10 +15,10 @@
 {% set_global section_content = section.content %}
 
 {% else %}
-{% set_global snapshots_section = get_section(path="snapshots/_index"~file_lang_path~".md") -%}
-{% set_global section_pages = snapshots_section.pages | sort(attribute="updated") %}
+{% set_global pic_story_section = get_section(path="pic_story/_index.md") -%}
+{% set_global section_pages = pic_story_section.pages | sort(attribute="updated") %}
 {% set_global section_pages = section_pages | reverse %}
-{% set_global section_content = snapshots_section.content %}
+{% set_global section_content = pic_story_section.content %}
 {% endif %}
 <div class="element-container">
   <div class="element">
@@ -30,24 +30,24 @@
       {% for page in section_pages %}
     <div class="element">
       <article>
-        <h1><a class="no-underline" href="{{ page.permalink }}">{{ page.title }}</a></h1>
-        <section>
-          <div class="muted" style="justify-content: space-between;display: flex;">
-            <time pubdate>{{ page.date | date(format="%Y-%m-%d") }}</time>
-            <span>{{ config.extra.author }}</span>
-          </div>
-        </section>
-
-        <div>{{ page.content | safe }}</div>
+        <h1><a class="no-underline" href="{{ page.permalink }}"># {{page.extra.issues }}&nbsp;{{ page.title }}</a></h1>
         <div class="muted" style="justify-content: space-between;display: flex;">
-          {% if page.taxonomies.tags %}
-          <div>
-            {% for tag in page.taxonomies.tags %}
-            <a class="muted text-sm no-underline" href="{{ get_taxonomy_url(kind="tags", name=tag) }}">#{{ tag }}</a>{% if page.taxonomies.tags | length > 1 %}
-            {% if loop.index != page.taxonomies.tags | length %}&nbsp;{% endif %}{% endif %}
-            {% endfor %}
-          </div>
-          {% endif %}
+          <time pubdate>{{ page.date | date(format="%Y-%m-%d") }}</time> 
+          <span>{{ config.extra.author }}</span>
+        </div>
+        <div>{{ page.summary | safe }}</div>
+        {% if page.taxonomies.tags %}
+        <p>
+          {% for tag in page.taxonomies.tags %}
+          <a class="muted text-sm no-underline" href="{{ get_taxonomy_url(kind="tags", name=tag) }}">#{{ tag }}</a>{% if page.taxonomies.tags | length > 1 %}
+          {% if loop.index != page.taxonomies.tags | length %}&nbsp;{% endif %}{% endif %}
+          {% endfor %}
+        </p>
+        {% endif %}
+        <div class="continue-reading-btn">
+          <section>
+            <a href="{{ page.permalink }}#continue-reading"><span>{{ trans(key="label_read_more") }} </span></a>
+          </section>
         </div>
       </article>
     </div>
@@ -61,28 +61,16 @@
 {% block sidebar %}
   <aside class="sidebar">
     <div class="sidebar-element">
-    <h2><a class="no-underline" href="/kinds/">{{ trans(key="label_kinds") }}</h2></a>
+    <h2>{{trans(key="label_new_pic_story_list_title") | markdown(inline=true) | safe}}</h2>
     <ul>
-      {% set kinds = get_taxonomy(kind="kinds") %} 
-      {% for cat in kinds.items %}
-      {% set url = get_taxonomy_url(kind="kinds", name=cat.name) %}
-      <li>
-        <a class="no-underline" href="{{ url }}">{{ cat.name }} ({{ cat.pages | length }})</a>
-      </li>
-      {% endfor %}
-    </ul>
-    </div>
-    <div class="sidebar-element">
-    <h2>{{trans(key="label_new_snapshots_list_title") | markdown(inline=true) | safe}}</h2>
-    <ul>
-        {% set all_blog_pages = get_section(path="snapshots/_index.md") -%}
+        {% set all_blog_pages = get_section(path="pic_story/_index.md") -%}
           {% for page in all_blog_pages.pages | slice(start=0,end=10)  %} 
           <li class="no-underline">
-          {{ macro::snapshots_side(page=page) }}
+          {{ macro::pic_story_side(page=page) }}
           </li>
           {% endfor %} 
           <li class="no-underline">
-          {{trans(key="label_all_snapshots") | markdown(inline=true) | safe}}
+          {{trans(key="label_all_npic_story") | markdown(inline=true) | safe}}
           </li>
     </ul>
     </div>
@@ -96,7 +84,7 @@
           <a href="/archive/">{{ trans(key="label_archive") }}</a>
         </li>
         <li class="no-underline">
-          <a href="/pic_story/archive/">{{ trans(key="label_pic_story_archive") }}</a>
+          <a href="/pic_storypic_story/archive/">{{ trans(key="label_pic_story_archive") }}</a>
         </li>
         <li class="no-underline">
           <a href="/snapshots/archive/">{{ trans(key="label_snapshot_archive") }}</a>
@@ -105,7 +93,7 @@
     </div>
     <div class="sidebar-element">
       {% set custom_sidebar = get_section(path="sidebar/_index.md") %} 
-      {{ custom_sidebar.content | safe }}  
-    </div>        
+      {{ custom_sidebar.content | safe }}        
+    </div>  
   </aside>
 {% endblock sidebar %}
