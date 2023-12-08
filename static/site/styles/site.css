@@ -972,4 +972,10 @@ div.pt a:hover {
     max-width: 24rem;
     table-layout: fixed;
   }
+  #menu-now {
+    display: none;
+  }
+  #menu-changelog {
+    display: none;
+  }
 }

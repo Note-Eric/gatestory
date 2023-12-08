@@ -1,5 +1,5 @@
 ---
-title: Pic Story Archive
+title: PicStory Archive
 sort_by: date
 sort_direction: decending
 draft: true

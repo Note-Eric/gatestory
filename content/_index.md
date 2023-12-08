@@ -10,12 +10,12 @@ title: 南觀×難關×喃倌
 # 南觀×難關×喃倌
 
 南方的觀點
-難解的關卡
+難解的卡關
 自喃的侍者
 
 您可以在 
 - [Blog](/blog) 找到關於未成年青少年矯正工作的故事
-- [Pic Story](/pic_story) 看到每張圖片背後的故事
-- [Stream](/stream) 是關於一個從事矯正工作人員的 mur mur
+- [PicStory](/pic_story) 看到每張圖片背後的故事
+- [Thoughts](/thoughts) 是關於一個從事矯正工作人員的 mur mur
 
 

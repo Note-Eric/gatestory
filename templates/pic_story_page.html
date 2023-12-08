@@ -2,7 +2,7 @@
 {% block breadcrumbs -%}
   <div class="pt">
     <span>&gt;&gt;</span>
-    <a class="category" href="/pic_story/">Pic Story</a>
+    <a class="category" href="/pic_story/">PicStory</a>
     {% if page.taxonomies.categories %}
     <span class="divider">/</span>
     <a class="category" href="{{ get_taxonomy_url(kind="categories", name=page.taxonomies.categories[0]) }}"> {{ page.taxonomies.categories[0] }}</a>
@@ -33,15 +33,15 @@
 <hr>
 <setion class="muted text-sm">
   <p>
-    你正在閱讀的是南觀×難關×喃倌 Pic Story！<br>
-    若有任何問題或回饋，歡迎<a class="muted" href="mailto:gs.locale@gmail.com?subject={{"回覆："~page.title | urlencode }}">來信</a>到：<code>gs.locale@gmail.com</code> 跟我分享！<br>
+    南觀×難關×喃倌 PicStory<br>
+    有任何問題或回饋，歡迎<a class="muted" href="mailto:gs.locale@gmail.com?subject={{"回覆："~page.title | urlencode }}">來信</a>到：<code>gs.locale@gmail.com</code> 跟我分享！<br>
     
   </p>
 </setion>
 {% endblock outro %}
 {% block pic_story_sidebar_slot %}
 <div class="sidebar-element">
-<h2>看其他<span style="text-decoration:underline;"><a href="/pic_story/">Pic Story</a></span></h2>
+<h2>看其他<span style="text-decoration:underline;"><a href="/pic_story/">PicStory</a></span></h2>
 <ul>
   {% set all_blog_pages = get_section(path="pic_story/_index.md") -%}
   {% for page in all_blog_pages.pages | slice(start=0,end=5)  %} 
