@@ -7,5 +7,4 @@ updated: 2023-05-06
 ## 其他站內頁面
 
 - [About](/about/)
-- [Search](/search)
 - [Subscribe](/subscribe)

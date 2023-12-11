@@ -9,6 +9,6 @@ template: pic_story_archive.html
 page_template: pic_story_page.html
 ---
 
-這裡是**「南觀×難關×喃倌 PicStory」**的主頁面。
+# **「南觀×難關×喃倌 PicStory」** 的主頁面。
 
 一張圖一個主題作為簡報主軸

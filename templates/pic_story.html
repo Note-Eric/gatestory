@@ -58,7 +58,7 @@
     </section>
 </div>
 {% endblock main -%}
-{% block sidebar %}
+{% block sidebar %} {# 在sidebar呼叫pic_story中相關的文章 #} 
   <aside class="sidebar">
     <div class="sidebar-element">
     <h2>{{trans(key="label_new_pic_story_list_title") | markdown(inline=true) | safe}}</h2>
@@ -78,10 +78,10 @@
     <h2>{{trans(key="label_sorting_articles") | markdown(inline=true) | safe}}</h2>
     <ul>
         <li class="no-underline">
-          <a href="/tag-list/">{{ trans(key="label_tags") }}</a>
+          <a href="{{ config.base_url }}/categories" class="btn btn-info" role="button">by Categories</a>
         </li>
         <li class="no-underline">
-          <a href="/archive/">{{ trans(key="label_archive") }}</a>
+          <a href="{{ config.base_url }}/tags" class="btn btn-info" role="button">by Tags</a>
         </li>
         <li class="no-underline">
           <a href="/pic_storypic_story/archive/">{{ trans(key="label_pic_story_archive") }}</a>
