@@ -49,7 +49,32 @@ description:
 
 在搜尋中輸入CMD進入命令列。之後輸入Zola 能看到以下畫面就表示可以開始建置網頁了。（終於阿...）
 
-這篇不是教學文，所以你真的有興趣要建置網頁可以爬文參考其他更專業的說明。我是個程式架站都不會的新手，只能分享粗淺的學習過程。不過如果你願意跟我這個新手一起交流討論，可以來信到
+這篇不是教學文，所以你真的有興趣要建置網頁可以爬文參考其他更專業的說明。我是個程式架站都不會的新手，只能分享粗淺的學習過程。
+
+我的下個難關就是 github。我知道這是版本控制工具，以為下載了[GitHub Desktop](https://desktop.github.com/) 就把文件放在本機上傳到 github的空間就可以建構一個網站。[使用 Zola 和 Github Pages 搭建网站](https://zhuanlan.zhihu.com/p/568842507) 這內容沒有詳細的步驟但是有個架構讓我大概知道要做哪些事情。
+
+1. Zola ：產生靜態網頁文件的核心工具。使用到的指令: 
+   1. Zola init: 在空的資料夾初始化一個網站的文件。需要詳細步驟就參考[靜態網站產生器 Zola](https://editor.leonh.space/2022/zola/)
+   2. Zola serve: 進行本地網頁的編譯，讓你在瀏覽器可以預先看到網頁的成果。等沒問題在來上傳文件到 github.
+   3. Zola build: 主要是把 md 文件內容轉為 Html 以及整個網頁的設定進行編譯。如果使用 [Netlify](https://www.netlify.com/)進行佈署 (deploy)。就不一定需要使用 Zola build。可以直接讓 Netlify 幫你佈署產生頁面。
+
+2. 在自己的電腦確認自己建立的網頁沒問題就可以上傳到 github。要使用 Netlify 或是 github 的 [pages](https://pages.github.com/) 的話就要把 repo 設定為公開。
+3. 設定 Netlify 就指定自己 github 帳號內放網頁的 repo。只要是公開的就可以指定。如果要使用 github pages 的話可以參考 [從零開始: 用github pages 上傳靜態網站](https://medium.com/%E9%80%B2%E6%93%8A%E7%9A%84-git-git-git/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B-%E7%94%A8github-pages-%E4%B8%8A%E5%82%B3%E9%9D%9C%E6%85%8B%E7%B6%B2%E7%AB%99-fa2ae83e6276) 這裡面有詳細的步驟。
+
+大致上以上三個步驟就能建立一個blog 網站。以上三步驟我先是在第一步驟卡關了四天，才弄清楚 Zola 是什麼。沒概念就需要重新整理自己的思考方式，在各種錯誤訊息裡找出自己搞不懂的地方。除了爬文，[ChatGPT](https://chat.openai.com/auth/login?__cf_chl_tk=es6WNeW552xBln0pp6cNWhIQGjibV3CXv18aDZgeBCc-1681910385-0-gaNycGzNGns) 給了我不少幫助。釐清我很多觀念上模糊的思考。
+
+第二步驟就是一直在新增一個 repo, 刪除 repo 之間不斷輪迴。卡關是怎樣使用 [Git Bash](https://gitforwindows.org/) 以及跟 GitHub Desktop 之間到底誰先誰後。這裡又過了 8 天，我終於大概有點知道這些指令跟工具的功能。最初我完成的是 [Even theme 的南觀×難關×喃倌](https://gate-story.github.io/)。選擇這 template 除了因為簡潔之外，還有就是比較容易維護。其他範本太過複雜，一個修改就開始報錯。經過幾次嘗試之後，決定讓網頁至少要有個開始。卡關太久心很累。
+
+放了幾篇文章之後，這網站簡潔之餘有點簡陋。很想加上些什麼。PJ 用了[金萱那提](https://pinchlime.com/blog/changed-font-to-jinxuan-latte/)，這字體讀起來很舒服，不過要付年費。不是很確定文章會不會一直寫下去，就先考慮免費方案。免費字體 [Google font](https://fonts.google.com/),嘗試 
+
+
+
+以下是我目前維護網站執行的順序。
+
+1. [Visual Studio Code](https://code.visualstudio.com/download) 新增文件跟進行 md 文章的編輯。這是我第一次使用這工具，之前大多是使用 markdown 編輯器或是 Obsidian 編輯。不過 VSC 能夠用樹狀圖的方式管理所有網站的文件，隨點隨改。實在太方便，感謝 PJ 介紹的好工具[2022 年開始進入我工作流的好工具們](https://pinchlime.com/blog/2022-tools-started-entering-my-workflows/)。
+2. 使用 Git Bash 命令列進入網站的根目錄。執行 Zola serve: 確認新增的頁面有沒有問題。
+3. GitHub Desktop: Commit 修改的內容之後，Push 文件到 github.
+4. 等過幾分鐘等 Netlify 把 Build 跟 Deploy 完成佈署就能看到更新的網站。
 
 
 
