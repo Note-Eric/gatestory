@@ -1,5 +1,5 @@
 ---
-title: 一張圖一個主題作為簡報主軸
+title: 以圖片作為作為主題
 paginate_by: 20
 sort_by: date
 sort_direction: decending
@@ -11,4 +11,4 @@ page_template: pic_story_page.html
 
 # **「南觀×難關×喃倌 PicStory」** 
 
-一張圖背後的故事
+圖片背後的故事

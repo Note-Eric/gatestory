@@ -11,6 +11,6 @@ title: 主題文章
 「**Blog**」
 
 - [給少年的話](/categories/gei-shao-nian-de-hua)：
-- [個案分享](/categories/ge-an-fen-xiang)：
+- [少年故事](/categories/ge-an-fen-xiang)：
 - [工作反思](/categories/gong-zuo-fan-si)：
 

@@ -27,6 +27,7 @@ description:
 
 11 月家人希望寫些部落格文章，想起 PJ 寫過[Pin 起來改版了！從 Wordpress 搬家到 Zola！](https://pinchlime.com/blog/rebuilt-pinchlime/)。裡面提到搬家的理由跟方式，其中一個重點是『免費』。使用 [Zola](https://www.getzola.org/) 感覺好像沒有很難，只要下載 theme 放到 github 就可以有個自己的網站。太棒了免費又簡單的方式怎能不用用看。於是開始著手嘗試建立網頁，第一步要安裝 Zola。上網找教學[[Zola] 開始架自己的部落格-使用Zola建置專案](https://marvinhsu.eth.limo/zola-01-introduction/)，安裝 Zola 要用套件管理工具[Scoop](https://scoop.sh/)或是[Chocolatey](https://chocolatey.org/)。等等等等，為什麼安裝軟體還要用什麼套件管理工具？不是點兩下執行安裝就好嗎？ 好吧，來安裝 Scoop 或是 Chocolatey (這到底是什麼阿?) 首先下載 Chocolatey, 好像比較多人分享. 連到 [Install](https://chocolatey.org/install#generic) 頁面。下載了 [Chocolatey package](https://community.chocolatey.org/api/v2/package/chocolatey) 文件。怎麼還是沒有 .msi, .exe之類的安裝文件阿? 一開始就遇到了不知道怎樣開始的困難。於是開始爬文找線索，[[軟體操作] chocolatey 好用的軟體安裝工具 on windows](https://www.nvda.org.tw/refined/ui=2004100000tm=1989344034)。Win7可以安裝,太好了。在 Powershell 輸入指令安裝，出現錯誤。
 
+
 > PS C:\Users\ERic> Set-ExecutionPolicy Bypass -Scope
 > g('https://chocolatey.org/install.ps1'))
 > Exception calling "DownloadString" with "1" argument
