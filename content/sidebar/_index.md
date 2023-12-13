@@ -8,3 +8,4 @@ updated: 2023-05-06
 
 - [About](/about/)
 - [Subscribe](/subscribe)
+- [Special Thanks](/special_thanks)
