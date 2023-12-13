@@ -90,7 +90,7 @@ Zola 到底是什麼，template, html, scss文件, js, md 文件一堆文件怎�
 3. context 的 md 文件要管理內容。寫好的文章都是用 md 文件儲存。其中有個文件是 _index.md。這可以針對不同的主題分別進行頁面的設定。例如 [Blog](/blog), [PicStory](/pic_story), [Thoughts](/thoughts/2023) 這三個主題都會有自己的頁面，每個頁面也可以分別設定版面的形式。像是要不要有側邊欄，或是增加更多的資訊在不同的側邊欄。
 
 ### 第二步驟就是使用 github 上傳網頁
-直覺 github 就是個免費的空間。以為跟雲端硬碟或是 Dropbox 一樣簡單使用。最經常用的就是到設定裡面刪除 repo，然後重新新增一個 repo, 刪除 repo 不斷輪迴。卡關在怎樣使用 [Git Bash](https://gitforwindows.org/) 以及跟 GitHub Desktop 之間到底誰先誰後。這裡又過了 8 天，我大概有點知道這些指令跟工具的功能。終於成功上傳了最初的網站， [Even theme 的南觀×難關×喃倌](https://gate-story.github.io/)。選擇 [Even](https://www.getzola.org/themes/even/)這個 template 除了因為簡潔之外，就是比較容易維護。其他範本太過複雜，一個修改就開始報錯。經過幾次嘗試之後，決定讓網頁至少要有個開始。卡關太久心很累。
+直覺 github 就是個免費的空間。以為跟雲端硬碟或是 Dropbox 一樣簡單使用。最經常用的就是到設定裡面刪除 repo，然後重新新增一個 repo, 刪除 repo 不斷輪迴。卡關在怎樣使用 [Git Bash](https://gitforwindows.org/) 以及跟 GitHub Desktop 之間到底誰先誰後。這裡又過了 8 天，我大概有點知道這些指令跟工具的功能。終於成功上傳了最初的網站， [Even theme 的南觀×難關×喃倌](https://gate-story.github.io/)。選擇 [Even](https://www.getzola.org/themes/even/)這個 [Zola themes](https://www.getzola.org/themes/) 作為範本。除了因為簡潔之外，就是比較容易維護。其他範本太過複雜，一個修改就開始報錯。經過幾次嘗試之後，決定讓網頁至少要有個開始。卡關太久心很累。
 
 ### 想換字體又走心了幾天
 放了幾篇文章之後，這網站簡潔之餘有點簡陋。很想加上些什麼。PJ 用了[金萱那提](https://pinchlime.com/blog/changed-font-to-jinxuan-latte/)，這字體讀起來很舒服，我很喜歡，不過要付年費。不是很確定文章會不會一直寫下去，就先考慮免費方案。免費字體 [Google font](https://fonts.google.com/),嘗試之後沒問題。可是想要更特別的，所以就找了可以免費使用的字體打算自己掛上字體。就算字體掛上了,不知道為何就是看不到設定的免費字體。
