@@ -36,7 +36,7 @@ description:
 >     + CategoryInfo          : NotSpecified: (:) [],
 >     + FullyQualifiedErrorId : DotNetMethodException
 
-看不懂這是什麼錯誤。沒有安裝 Chocolatey 就沒法安裝 Zola。嘗試用 Scoop 也是錯誤訊息。怎麼可能一定要安裝別的工具來安裝 Zola。於是開始胡亂嘗試。例如搜尋 Zola 出現的是婚禮網站。Zola install 只出現兩個中文連結。PJ 提到過 [Hugo](https://gohugo.io/) 也是很多人使用，換換方向試試[Hugo on Github 自架全紀錄 - Hugo環境安裝(一)](https://devbricker.github.io/post/hugo/markdown/hugo-on-github-%E8%87%AA%E6%9E%B6%E5%85%A8%E7%B4%80%E9%8C%84-hugo%E7%92%B0%E5%A2%83%E5%AE%89%E8%A3%9D%E4%B8%80/)。
+看不懂這是什麼錯誤。沒有安裝 Chocolatey 就沒法安裝 Zola。嘗試用 Scoop 也是錯誤訊息。怎麼可能一定要安裝別的工具來安裝 Zola。這時候就知道不知道如何開始的困頓是多麼揪心。開始胡亂嘗試。例如搜尋 Zola 出現的是婚禮網站。Zola install 只出現兩個中文連結。PJ 提到過 [Hugo](https://gohugo.io/) 也是很多人使用，換換方向試試[Hugo on Github 自架全紀錄 - Hugo環境安裝(一)](https://devbricker.github.io/post/hugo/markdown/hugo-on-github-%E8%87%AA%E6%9E%B6%E5%85%A8%E7%B4%80%E9%8C%84-hugo%E7%92%B0%E5%A2%83%E5%AE%89%E8%A3%9D%E4%B8%80/)。
 
 > 創建我們的Blog第一步，怎麼就卡關了呢？很開心寫了腳本，想透過git直接更新我們的Blog，指令一下就GG。
 
@@ -51,7 +51,9 @@ description:
 
 這篇不是教學文，所以你真的有興趣要建置網頁可以爬文參考其他更專業的說明。我是個程式架站都不會的新手，只能分享粗淺的學習過程。
 
-我的下個難關就是 github。我知道這是版本控制工具，以為下載了[GitHub Desktop](https://desktop.github.com/) 就把文件放在本機上傳到 github的空間就可以建構一個網站。[使用 Zola 和 Github Pages 搭建网站](https://zhuanlan.zhihu.com/p/568842507) 這內容沒有詳細的步驟但是有個架構讓我大概知道要做哪些事情。
+## 終於像是要開始架設網站了
+
+我的下個難關就是 github。我知道這是版本控制工具，以為下載了[GitHub Desktop](https://desktop.github.com/) 就把文件放在本機上傳到 github的空間就可以建構一個網站。參考[使用 Zola 和 Github Pages 搭建网站](https://zhuanlan.zhihu.com/p/568842507) 這內容沒有詳細的步驟，但是有個架構讓我大概知道要做哪些事情。
 
 1. Zola ：產生靜態網頁文件的核心工具。使用到的指令: 
    1. Zola init: 在空的資料夾初始化一個網站的文件。需要詳細步驟就參考[靜態網站產生器 Zola](https://editor.leonh.space/2022/zola/)
@@ -61,24 +63,54 @@ description:
 2. 在自己的電腦確認自己建立的網頁沒問題就可以上傳到 github。要使用 Netlify 或是 github 的 [pages](https://pages.github.com/) 的話就要把 repo 設定為公開。
 3. 設定 Netlify 就指定自己 github 帳號內放網頁的 repo。只要是公開的就可以指定。如果要使用 github pages 的話可以參考 [從零開始: 用github pages 上傳靜態網站](https://medium.com/%E9%80%B2%E6%93%8A%E7%9A%84-git-git-git/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B-%E7%94%A8github-pages-%E4%B8%8A%E5%82%B3%E9%9D%9C%E6%85%8B%E7%B6%B2%E7%AB%99-fa2ae83e6276) 這裡面有詳細的步驟。
 
-大致上以上三個步驟就能建立一個blog 網站。以上三步驟我先是在第一步驟卡關了四天，才弄清楚 Zola 是什麼。沒概念就需要重新整理自己的思考方式，在各種錯誤訊息裡找出自己搞不懂的地方。除了爬文，[ChatGPT](https://chat.openai.com/auth/login?__cf_chl_tk=es6WNeW552xBln0pp6cNWhIQGjibV3CXv18aDZgeBCc-1681910385-0-gaNycGzNGns) 給了我不少幫助。釐清我很多觀念上模糊的思考。
+大致上以上三個步驟就能建立一個blog 網站。
 
-第二步驟就是一直在新增一個 repo, 刪除 repo 之間不斷輪迴。卡關是怎樣使用 [Git Bash](https://gitforwindows.org/) 以及跟 GitHub Desktop 之間到底誰先誰後。這裡又過了 8 天，我終於大概有點知道這些指令跟工具的功能。最初我完成的是 [Even theme 的南觀×難關×喃倌](https://gate-story.github.io/)。選擇這 template 除了因為簡潔之外，還有就是比較容易維護。其他範本太過複雜，一個修改就開始報錯。經過幾次嘗試之後，決定讓網頁至少要有個開始。卡關太久心很累。
+### 以上三步驟我先是在第一步驟卡關了四天
+Zola 到底是什麼，template, html, scss文件, js文件一堆文件怎麼湊出一個網站。沒概念就需要重新整理自己的思考方式，在各種錯誤訊息裡找出自己搞不懂的地方。除了爬文，[ChatGPT](https://chat.openai.com/auth/login?__cf_chl_tk=es6WNeW552xBln0pp6cNWhIQGjibV3CXv18aDZgeBCc-1681910385-0-gaNycGzNGns) 給了我不少幫助。釐清我很多觀念上模糊的思考。
 
-放了幾篇文章之後，這網站簡潔之餘有點簡陋。很想加上些什麼。PJ 用了[金萱那提](https://pinchlime.com/blog/changed-font-to-jinxuan-latte/)，這字體讀起來很舒服，不過要付年費。不是很確定文章會不會一直寫下去，就先考慮免費方案。免費字體 [Google font](https://fonts.google.com/),嘗試 
+### 第二步驟就是使用 github 上傳網頁
+直覺 github 就是個免費的空間。以為跟雲端硬碟或是 Dropbox 一樣簡單使用。結果就是一直在新增一個 repo, 刪除 repo 之間不斷輪迴。卡關在怎樣使用 [Git Bash](https://gitforwindows.org/) 以及跟 GitHub Desktop 之間到底誰先誰後。這裡又過了 8 天，我終於大概有點知道這些指令跟工具的功能。終於上傳了最初的網站， [Even theme 的南觀×難關×喃倌](https://gate-story.github.io/)。選擇這 template 除了因為簡潔之外，還有就是比較容易維護。其他範本太過複雜，一個修改就開始報錯。經過幾次嘗試之後，決定讓網頁至少要有個開始。卡關太久心很累。
 
+### 想換字體又走心了幾天
+放了幾篇文章之後，這網站簡潔之餘有點簡陋。很想加上些什麼。PJ 用了[金萱那提](https://pinchlime.com/blog/changed-font-to-jinxuan-latte/)，這字體讀起來很舒服，不過要付年費。不是很確定文章會不會一直寫下去，就先考慮免費方案。免費字體 [Google font](https://fonts.google.com/),嘗試之後沒問題。可是想要更特別的，所以就找了可以免費使用的字體打算自己掛上字體。就算字體掛上了,不知道為何就是看不到設定的免費字體。
 
+我找的字體是兩位高中生在自主學習計畫做的字體。雖然後來搞不定就沒使用,但是我很認同這兩位年輕人的行動力跟想法。以後有機會再來使用。[【辰宇落雁體】── 複寫呢喃，為你成篇](https://github.com/Chenyu-otf/chenyuluoyan_thin)。
 
-以下是我目前維護網站執行的順序。
+### 以下是我目前維護網站執行的順序
 
 1. [Visual Studio Code](https://code.visualstudio.com/download) 新增文件跟進行 md 文章的編輯。這是我第一次使用這工具，之前大多是使用 markdown 編輯器或是 Obsidian 編輯。不過 VSC 能夠用樹狀圖的方式管理所有網站的文件，隨點隨改。實在太方便，感謝 PJ 介紹的好工具[2022 年開始進入我工作流的好工具們](https://pinchlime.com/blog/2022-tools-started-entering-my-workflows/)。
 2. 使用 Git Bash 命令列進入網站的根目錄。執行 Zola serve: 確認新增的頁面有沒有問題。
 3. GitHub Desktop: Commit 修改的內容之後，Push 文件到 github.
 4. 等過幾分鐘等 Netlify 把 Build 跟 Deploy 完成佈署就能看到更新的網站。
 
+### 改版
+經過將近一個月的燒腦奮戰，不知又多了幾根白髮。追求更好的閱讀體驗的想法讓我起心動念想使用 [Pin 起來](https://pinchlime.com/) 的網頁樣式。每次遇到網站問題進行搜尋的時候，在各個網站部落格穿梭，能讓我不小心讀完一篇又跟著讀其他內容的就是 Pin 起來的文章。有被Pin到的感覺吧。讀來舒服的文字跟想法，忍不住想繼續。這想法過了幾天，決定先開始進行些研究。先是到 github 找 PJ 用來放網站的 repo。下載之後進行結構的理解以及測試每個文件背後影響的功能。經過幾天的測試，大致理解需要怎樣設定。發了一個訊息徵得 PJ 同意使用在 github 的Zola文件作為網頁範本，進行修改。自己跌跌撞撞的架站經驗，讓我體會到每個程式碼，每個功能的增加修改都是心血跟心力。對於拾人牙慧，我是有所顧慮。感謝 PJ 大方的同意並且分享他自己架站的經驗。如同 PJ 分享的，Zola 的使用分享真的不多，但是有前輩慷慨分享架設過程，讓我覺得不用怕，步步為營總能找到出路。
 
+### 增加側邊欄用分類跟標籤方式找尋文章
+Pin 起來的[站內搜尋](https://pinchlime.com/search/) 側邊欄位有個「看更多」區塊的連結是失效的。這部份我嘗試詢問 GPT 也沒有得到答案。但是 templates 資料夾內有個 404.html 有寫出依照標籤 Tags 或是類別 Categories呈現的 code。
 
+>  <a href="{{ config.base_url }}/categories" class="btn btn-info" role="button">Categories</a>
+>  <a href="{{ config.base_url }}/tags" class="btn btn-info" role="button">Tags</a>
+ 
+於是我把以上兩行 code 加入到 templates 資料夾內的 search.html內。
+原本的 code 是：
+>        <li class="no-underline">
+>          <a href="/tag-list/">{{ trans(key="label_tags") }}</a>
+>        </li>
+>        <li class="no-underline">
+>          <a href="/archive/">{{ trans(key="label_archive") }}</a>
+>        </li>
 
+現在改成
+
+>        <li class="no-underline">
+>          <a href="{{ config.base_url }}/categories" class="btn btn-info" role="button">By Categories</a>
+>        </li>
+>        <li class="no-underline">
+>          <a href="{{ config.base_url }}/tags" class="btn btn-info" role="button">By Tags</a>
+>        </li>
+
+這樣就能依照類別跟標籤顯示文章。
 
 Manifesto 頁面，身為 ，因為我在 email 服務 “HEY” 的官網看過這樣的東西，覺得非常喜歡。
 

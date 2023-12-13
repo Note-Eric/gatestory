@@ -11,4 +11,4 @@ page_template: pic_story_page.html
 
 # **「南觀×難關×喃倌 PicStory」** 
 
-一張圖一個主題
+一張圖背後的故事
