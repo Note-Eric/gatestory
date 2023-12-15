@@ -11,4 +11,4 @@ page_template: pic_story_page.html
 
 # **「南觀×難關×喃倌 PicStory」** 
 
-圖片背後的故事
+解悉每張圖片發人省思的故事
