@@ -8,9 +8,9 @@ template: archive.html
 title: 主題文章
 ---
 
-「**Blog**」
+**Blog**
 
-- [給少年的話](/categories/gei-shao-nian-de-hua)：
-- [少年故事](/categories/ge-an-fen-xiang)：
-- [工作反思](/categories/gong-zuo-fan-si)：
+- [日常工作及反思](/categories/gong-zuo-fan-si)
+- [給少年的叮嚀](/categories/gei-shao-nian-de-hua)
+- [不留姓名的少年故事](/categories/ge-an-fen-xiang)
 

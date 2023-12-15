@@ -14,8 +14,8 @@ title: 南觀×難關×喃倌
 自喃的公僕<br>
 
 您可以在 
-- [Blog](/blog) 找到關於未成年青少年矯正工作的故事
-- [PicStory](/pic_story) 看到每張圖片背後的故事
-- [Thoughts](/thoughts/2023) 是關於一個從事矯正工作的 mur mur
+- [Blog](/blog) 發現犯罪少年矯正工作的歷史足跡
+- [PicStory](/pic_story) 解析每張圖片發人省思的故事
+- [Thoughts](/thoughts/2023) 窺探少年矯正人員的murmur
 
 
