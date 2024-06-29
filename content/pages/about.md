@@ -18,8 +18,8 @@ description: 南觀×難關×喃倌南觀×難關×喃倌
 
 立志要當老師的志向，讓我的職涯恰與矯正學校歷史平行著，也同時參與了變革與成長，但願我的書寫能爬梳矯正學校一路走來的美麗與哀愁。
 
-聯絡請<a class="muted" href="mailto:gs.locale@gmail.com?subject={{"回覆："~page.title | urlencode }}">來信</a>到：<code>gs.locale@gmail.com</code>: gs.locale＠gmail.com</code>
-X（twitter）: <a rel="noopener" target="_blank" href="https://twitter.com/gatestoryLea">@gatestoryLea</a></li>
+聯絡請來信到：gs.locale@gmail.com<br>
+X（twitter）: @gatestoryLea
 
 
 
