@@ -8,6 +8,15 @@ template: thoughts.html
 ---
 窺探少年矯正人員的murmur
 
+<a href="https://www.threads.net/@gatestory_lea?hl=zh-tw">在 Threads 上關注我</a>
+
+## 2024
+### Sep
+{% fleet(num="2",time="Sep 18 16:11",year="2024") %}
+請移駕到 Threads 關注。
+{% end %}
+
+
 ## 2023
 
 ### DEC
